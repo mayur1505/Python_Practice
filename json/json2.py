@@ -31,4 +31,6 @@ s=json.dumps(book) #it is taking dictionary object book as an input and it is du
 
 with open("/home/mayurshimpi/Desktop/python_practice/Python_Practice/json/book.txt","w") as f:
     f.write(s)
-
+#above two lines will create a text document and that will contain the book dictinoary 
+#Now we can read this JSON data using any language that supports JSON such as javascript , c++ etc
+#Hence this is called as data exchange format (i.e. exchanging data from python program to javascript program)
