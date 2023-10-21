@@ -1,0 +1,29 @@
+ wordcount:3John: Hi Henry
+ wordcount:0
+ wordcount:7Henry: Hi John, after a long time.
+ wordcount:0
+ wordcount:8John: Yeah dude, where do you live now?
+ wordcount:0
+ wordcount:4Henry: With my parents
+ wordcount:0
+ wordcount:6John: Where do your parents live?
+ wordcount:0
+ wordcount:3Henry: With me
+ wordcount:0
+ wordcount:6John: Where do you all live?
+ wordcount:0
+ wordcount:2Henry: Together
+ wordcount:0
+ wordcount:4John: Dude don't joke
+ wordcount:0
+ wordcount:5Henry: I'm not joking dude
+ wordcount:0
+ wordcount:9John: Ok, now tell me, where is your house?
+ wordcount:0
+ wordcount:6Henry: Next to my neighbor's house
+ wordcount:0
+ wordcount:6John: Where is your neighbor's house?
+ wordcount:0
+ wordcount:5Henry: Next to my house
+ wordcount:0
+ wordcount:2John: Grrrrrrr
