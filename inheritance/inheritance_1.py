@@ -11,7 +11,7 @@ class car(vehicle): #carclass is inherited from vehicle class
         self.has_roof = True
 
     def specific_usage(self):
-        #self.general_usage()
+        #self.general_usage() # self is an object of car class and since it is derived from vehicle you'll be able to call general usage here
         print("specific use: commute to work, vacation with family")
 
 class MotorCycle(vehicle):
@@ -25,10 +25,17 @@ class MotorCycle(vehicle):
         print("specific use: road trip, racing")
 
 c = car()
-c.general_usage()
+c.general_usage()  # we can call method or property from parent class using object of derived class
 c.specific_usage()
 
-m = MotorCycle()
+m = MotorCycle()  
 m.general_usage()
 m.specific_usage()
-#print(issubclass(car,MotorCycle))
+
+# c and m are objects of derived classed
+
+
+#Benefits of inheritance,
+#1) code reuse
+#2) Extensibility
+#3) Readability
