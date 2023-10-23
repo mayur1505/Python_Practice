@@ -1,0 +1,51 @@
+#Difference between multiprocessing and multithreading (Youtube:https://www.youtube.com/watch?v=oIN488Ldg9k)
+Multiprocessing in Python is a technique for achieving parallelism by creating and managing multiple processes, each with its own Python interpreter and memory space. This allows Python to fully utilize multi-core processors and overcome the Global Interpreter Lock (GIL) limitation, making it suitable for CPU-bound tasks where true parallelism is required.
+
+The Python standard library provides the multiprocessing module, which simplifies the process of creating and managing multiple processes. Here are some key points to understand about multiprocessing in Python:
+
+Process Creation: The multiprocessing module provides a Process class for creating and managing processes. You can define a target function or method for each process, which will be executed independently.
+
+python
+Copy code
+from multiprocessing import Process
+
+def my_function():
+    # Your task goes here
+
+process1 = Process(target=my_function)
+process2 = Process(target=my_function)
+Starting and Joining Processes: You start processes using the start() method, and you can wait for a process to finish using the join() method. Just like with threads, join() ensures that your main program doesn't exit before all processes have completed their work.
+
+python
+Copy code
+process1.start()
+process2.start()
+
+process1.join()
+process2.join()
+Data Sharing: Processes run in separate memory spaces, which means they do not share memory by default. To share data between processes, you can use various mechanisms such as Queue, Pipe, and Manager objects, which are provided by the multiprocessing module.
+
+Process Pooling: The multiprocessing module includes a Pool class, which allows you to create a pool of worker processes that can execute a function in parallel. This is useful for tasks like parallelizing work over a large dataset.
+
+python
+Copy code
+from multiprocessing import Pool
+
+def process_data(data):
+    # Process data here
+
+data = [...]
+with Pool(processes=4) as pool:
+    results = pool.map(process_data, data)
+Error Handling: You can handle exceptions and errors that occur within processes, allowing you to gracefully manage issues without causing the entire program to crash.
+
+Multiprocessing is particularly useful for CPU-bound tasks, where tasks are computation-intensive and can be parallelized. It is important to choose the appropriate concurrency model (threads or processes) based on the nature of your task and the hardware resources available.
+For I/O-bound tasks, multithreading or asynchronous programming may be more suitable, while multiprocessing is better for CPU-bound tasks.
+
+In summary:
+
+Use multithreading for I/O-bound tasks and tasks where you want to perform other operations while waiting for I/O, or when simplicity is a priority.
+
+Use multiprocessing for CPU-bound tasks that require parallelism, as it can fully utilize multiple CPU cores. It's also suitable for tasks where you need to isolate data between processes or manage complex parallel computations.
+
+The choice between multithreading and multiprocessing depends on the nature of your task and the hardware resources available. In some cases, a combination of both may be the most effective solution, depending on the specific requirements of different parts of your application.
