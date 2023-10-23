@@ -32,5 +32,6 @@ def calc_cube(numbers):
     return result
 
 array = range(1,10)
+#when we call calc_square or calc_cube function, python will wrap it in the timer function for us
 out_square = calc_square(array)
 out_cube = calc_cube(array)
