@@ -1,5 +1,6 @@
-Revision this PYTHON_PRACTICE folder in following sequece
-1) basics
+Revision this PYTHON_PRACTICE folder 
+start with very_basics folder and the follow below sequence
+1) loops_conditions
 2) function
 3) dictionary
 4) tuple
