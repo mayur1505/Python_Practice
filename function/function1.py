@@ -9,11 +9,11 @@ def calculate_total(exp):
     return total
 
 
-tom_list=[2100,3400,3500]
-joe_list=[200,500,700]
+# tom_list=[2100,3400,3500]
+# joe_list=[200,500,700]
 
-toms_total=calculate_total(tom_list)
-joes_total=calculate_total(joe_list)
+# toms_total=calculate_total(tom_list)
+# joes_total=calculate_total(joe_list)
 
-print("Tom's expenses total is ",toms_total)
-print("Joe's expenses total is ",joes_total)
+# print("Tom's expenses total is ",toms_total)
+# print("Joe's expenses total is ",joes_total)
