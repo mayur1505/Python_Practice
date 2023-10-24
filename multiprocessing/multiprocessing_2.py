@@ -5,6 +5,7 @@ import multiprocessing
 
 square_result=[]
 def calc_square(numbers):
+    global square_result
     for n in numbers:
         print('square ' + str(n*n))
         square_result.append(n*n)
