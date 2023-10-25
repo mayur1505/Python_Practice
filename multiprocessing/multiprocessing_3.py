@@ -21,7 +21,7 @@ if __name__ == "__main__":
 # whenever you create a new process the new process will get its own address space at a
 # space meaning the space where it stores all the variables
 
-#see the theory in theory folder and file name is "multiprocessing"
+#see the theory in theory folder and file name is "multiprocessing_1"
 #we will use shared memory for solving above issue. 
 #Shared memory lives outside the processes hence we can access it. There’s two way of using shared memory. 
 #First one is value and other is array.
