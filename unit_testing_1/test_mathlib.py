@@ -148,4 +148,76 @@
 
 
 #suppose we want to run the test, base on the name
-#for ex. we want to run those tests which has "multiply" in their name
+#for ex. we want to run those tests which has "multiply" in their test name
+
+# import mathlib 
+
+# def test_calc_total():#test_ prefix in front of function name
+#     total=mathlib.calc_totol(4,5)#function from mathlib.py
+#     assert total == 9  #to verify we will use assert statement (9 is the expected o/p)
+
+# def test_calc_multiply():
+#     result = mathlib.calc_multiply(10,3)
+#     assert result == 30
+
+
+#run below command to run only those tests which has "multiply" in their test name
+#pytest -k multiply
+
+#output
+# PS C:\Users\HP\Desktop\Preparation\Python_Practice\unit_testing> pytest -k multiply
+# ======================================================================= test session starts ========================================================================
+# platform win32 -- Python 3.9.2, pytest-7.4.3, pluggy-1.3.0
+# rootdir: C:\Users\HP\Desktop\Preparation\Python_Practice\unit_testing
+# collected 2 items / 1 deselected / 1 selected
+
+# test_mathlib.py .                                                                                                                                             [100%]
+
+# ================================================================= 1 passed, 1 deselected in 0.02s ==================================================================
+
+#for more detailed output use -v (verbose) option
+#run -> pytest -k multiply -v
+
+#output
+# PS C:\Users\HP\Desktop\Preparation\Python_Practice\unit_testing> pytest -k multiply -v
+# ======================================================================= test session starts ========================================================================
+# platform win32 -- Python 3.9.2, pytest-7.4.3, pluggy-1.3.0 -- c:\users\hp\appdata\local\programs\python\python39\python.exe
+# cachedir: .pytest_cache
+# rootdir: C:\Users\HP\Desktop\Preparation\Python_Practice\unit_testing
+# collected 2 items / 1 deselected / 1 selected
+
+# test_mathlib.py::test_calc_multiply PASSED                                                                                                                    [100%]
+
+
+
+
+#Suppose we want to Run the test's by category
+#suppose we want to test some tests which we want to test on windows machine but want to skip on mac
+#for that we will use custome markers
+
+# import mathlib
+# import pytest
+
+# @pytest.mark.windows#windows is a custom tag we have created, this can be anything we want like xyz or abc.So by doing this we are tagging below test as windows
+# def test_windows_1():
+#     assert True
+
+# @pytest.mark.windows
+# def test_windows_2():
+#     assert True
+
+# #below two test will be categorized as mac
+# @pytest.mark.mac
+# def test_mac_1():
+#     assert True
+
+# @pytest.mark.mac
+# def test_mac_2():
+#     assert True
+
+
+#how to run?
+#run -> pytest -m windows -v #for running windows tests
+#run ->  pytest -m mac -v #for running mac tests
+
+#run -> pytest -m "not windows" -v  #for running all tests except windows
