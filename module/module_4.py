@@ -1,4 +1,4 @@
-import module_3 #to imoprt custom module, just use file name without .py extension(as both the files are in same code directory)
+import module_3 #to import custom module, just use file name without .py extension(as both the files are in same code directory)
 
 print("Area of square",module_3.calculate_square_area(5))
 
@@ -18,7 +18,7 @@ print("jo's total",jo_total)
 #to import from totally different directory
 #we will have to system path for this
 import sys
-sys.path.append("C:\\Users\\HP\\Desktop\\Preparation\\Python_Practice\\function")
+sys.path.append("/home/mayurshimpi/Desktop/code/Python_Practice/function")
 import function1 as f1
 
 mayur_list=[200,500,700]

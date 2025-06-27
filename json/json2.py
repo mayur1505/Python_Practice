@@ -29,7 +29,7 @@ s=json.dumps(book) #it is taking dictionary object book as an input and it is du
                 #that's why we have 's' after dump
                 #when this converts dic object to string , it will be converted to json format
 
-with open("/home/mayurshimpi/Desktop/python_practice/Python_Practice/json/book.txt","w") as f:
+with open("/home/mayurshimpi/Desktop/book.txt","w") as f:
     f.write(s)
 #above two lines will create a text document and that will contain the book dictinoary 
 #Now we can read this JSON data using any language that supports JSON such as javascript , c++ etc

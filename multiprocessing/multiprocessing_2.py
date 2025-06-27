@@ -1,5 +1,6 @@
 #now instead of printing results in multiprocessing_1.py, we will store them global variable
 
+#Below script demonstrates a key concept in Python's multiprocessing module: variables are not shared between processes.
 import time
 import multiprocessing
 

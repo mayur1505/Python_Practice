@@ -1,6 +1,6 @@
 #this code will read the text file which we made in json2.py lecture/code
 
-f=open("/home/mayurshimpi/Desktop/python_practice/Python_Practice/json/book.txt",'r')
+f=open("/home/mayurshimpi/Desktop/book.txt",'r')
 s=f.read() #this will read the whole file in to this "s" variable
 print(s) #this will print a string
 print(type(s))

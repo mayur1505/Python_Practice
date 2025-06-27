@@ -49,3 +49,5 @@ Use multithreading for I/O-bound tasks and tasks where you want to perform other
 Use multiprocessing for CPU-bound tasks that require parallelism, as it can fully utilize multiple CPU cores. It's also suitable for tasks where you need to isolate data between processes or manage complex parallel computations.
 
 The choice between multithreading and multiprocessing depends on the nature of your task and the hardware resources available. In some cases, a combination of both may be the most effective solution, depending on the specific requirements of different parts of your application.
+
+#beautified version of above text is in ipynb file

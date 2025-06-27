@@ -1,6 +1,6 @@
 #working with JSON objets
 #JSON is Java Script Object Notation
-#JSON is a data exchange format similat to XML
+#JSON is a data exchange format similar to XML
 #example of JSON and XML
 #Below one is JSON
 # {"employees":[

@@ -20,6 +20,8 @@ arr = [2,3,8,9]
 
 t = time.time()
 
+print("Starting time",t)
+
 calc_square(arr)
 calc_cube(arr)
 
